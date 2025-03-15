@@ -20,14 +20,14 @@
     overflow: hidden;
 }
 
-.gh-head-inner a {
-    color: var(--bright-green);
-}
-.gh-head-inner a:before {
-    content: "[";
+.gh-head-menu a {
     color: var(--bright-black);
 }
-.gh-head-inner a:after {
+.gh-head-menu a:before {
+    content: "[";
+    color: var(--bright-green);
+}
+.gh-head-menu a:after {
     content: "]";
     color: var(--bright-green);
 }
