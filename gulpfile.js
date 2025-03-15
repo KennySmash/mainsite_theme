@@ -70,8 +70,7 @@ function js(done) {
         order(getJsFiles('v1'), {sourcemaps: true}),
         concat('main.min.js'),
         uglify(),
-        dest('assets/built/', {sourcemaps: '.'}),
-        livereload()
+        dest('assets/built/', {sourcemaps: '.'})
     ], handleError(done));
 }
 
@@ -90,12 +89,8 @@ function zipper(done) {
     ], handleError(done));
 }
 
-const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
-const cssWatcher = () => watch('assets/css/**/*.css', css);
-const jsWatcher = () => watch('assets/js/**/*.js', js);
-const watcher = parallel(hbsWatcher, cssWatcher, jsWatcher);
 const build = series(css, js);
 
 exports.build = build;
 exports.zip = series(build, zipper);
-exports.default = series(build, serve, watcher);
+exports.default = series(build);
