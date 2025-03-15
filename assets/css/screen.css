@@ -2,9 +2,7 @@
 @import "fonts.css";
 
 :root {
-    --font-sans: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-    --font-serif: Libre Baskerville, Georgia, Times, serif;
-    --font-mono: JetBrains Mono, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    --font: "Inconsolata", monospace;
     --color-primary-text: var(--color-darker-gray);
     --color-secondary-text-dark: rgba(0, 0, 0, 0.4);
     --color-secondary-text-light: rgba(255, 255, 255, 0.64);
@@ -47,7 +45,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background);
 }
 
 .gh-main {
@@ -64,7 +62,7 @@ figcaption {
 }
 
 hr {
-    background-color: var(--color-border);
+    background-color: var(--color_09);
 }
 
 .gh-content h2 {
@@ -149,7 +147,7 @@ hr {
 
 .is-head-stacked .gh-head-menu::before,
 .is-head-stacked .gh-head-menu::after {
-    background-color: var(--color-border);
+    background-color: var(--color_09);
 }
 
 .gh-head-menu a {
@@ -158,7 +156,7 @@ hr {
 
 @media (max-width: 991px) {
     .is-head-open:not(.is-head-brand):not(.is-head-dark):not(.is-head-transparent) :is(#gh-head, #gh-head .gh-head-actions) {
-        background-color: var(--background-color);
+        background-color: var(--background);
     }
 }
 
@@ -181,11 +179,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-about-primary {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-about-primary {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .gh-about-primary a {
@@ -200,11 +198,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-about-secondary {
-    font-family: var(--gh-font-body, var(--font-serif));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-about-secondary {
-    font-family: var(--gh-font-body, var(--font-mono));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .gh-about-primary + .gh-about-secondary {
@@ -264,7 +262,7 @@ hr {
     position: absolute;
     inset: 0;
     content: "";
-    background-color: var(--color-black);
+    background-color: var(--background);
     transition: opacity 1.5s ease;
 }
 
@@ -300,17 +298,17 @@ hr {
 }
 
 .has-background-about .gh-about-primary {
-    color: #fff;
+    color: var(--color_09);
 }
 
 .has-background-about .gh-about-secondary {
-    color: #fff;
+    color: var(--color_09);
     opacity: 0.7;
 }
 
 .has-background-about .gh-subscribe-input {
     color: var(--color-secondary-text-dark);
-    background-color: #fff;
+    color: var(--color_09);
     border: 0;
 }
 
@@ -370,11 +368,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-title {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-title {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .gh-card-link:hover .gh-card-title {
@@ -515,11 +513,11 @@ hr {
 }
 
 .has-serif-font.has-typographic-feed:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-excerpt {
-    font-family: var(--gh-font-body, var(--font-serif));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .has-mono-font.has-typographic-feed:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-excerpt {
-    font-family: var(--gh-font-body, var(--font-mono));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .has-typographic-feed .gh-card-meta {
@@ -710,11 +708,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-article-title {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-article-title {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .gh-article-excerpt {
@@ -726,11 +724,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-article-excerpt {
-    font-family: var(--gh-font-body, var(--font-serif));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-article-excerpt {
-    font-family: var(--gh-font-body, var(--font-mono));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .gh-article-excerpt .emoji {
@@ -759,11 +757,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-content > :is([id], p, ul, ol) {
-    font-family: var(--gh-font-body, var(--font-serif));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-content > :is([id], p, ul, ol) {
-    font-family: var(--gh-font-body, var(--font-mono));
+    font-family: var(--gh-font-body, var(--font));
 }
 
 .gh-article-footer {
@@ -835,11 +833,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-cta-title {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-cta-title {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .gh-cta .gh-btn {
@@ -861,11 +859,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-navigation {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-navigation {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 /* Comments
@@ -881,11 +879,11 @@ hr {
 }
 
 .has-serif-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-comments-title {
-    font-family: var(--gh-font-heading, var(--font-serif));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 .has-mono-font:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]):not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-comments-title {
-    font-family: var(--gh-font-heading, var(--font-mono));
+    font-family: var(--gh-font-heading, var(--font));
 }
 
 /* Subscribe
