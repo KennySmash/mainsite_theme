@@ -1,3 +1,16 @@
 .gh-site {
     background: var(--background);
 }
+
+.gh-head-logo {
+    letter-spacing: -0.2em;
+    line-height: 0.8em;
+}
+
+.ascii-art {
+    white-space: pre;
+    font-size: 0.8em;
+    color: var(--text-color);
+    text-shadow: 0 0 5px rgba(--bright-black, 1);
+    overflow: hidden;
+}
