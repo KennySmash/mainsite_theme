@@ -23,25 +23,51 @@
 }
 
 :root {
-    --color_01: '#1E2229'; /*Black (Host)*/
-    --color_02: '#ED1515'; /*Red (Syntax string)*/
-    --color_03: '#44853A'; /*Green (Command)*/
-    --color_04: '#F67400'; /*Yellow (Command second)*/
-    --color_05: '#1D99F3'; /*Blue (Path)*/
-    --color_06: '#9B59B6'; /*Magenta (Syntax var)*/
-    --color_07: '#1ABC9C'; /*Cyan (Prompt)*/
-    --color_08: '#FCFCFC'; /*White*/
-    --color_09: '#7F8C8D'; /*Bright Black*/
-    --color_10: '#C0392B'; /*Bright Red (Command error)*/
-    --color_11: '#55A649'; /*Bright Green (Exec)*/
-    --color_12: '#FDBC4B'; /*Bright Yellow*/
-    --color_13: '#3DAEE9'; /*Bright Blue (Folder)*/
-    --color_14: '#8E44AD'; /*Bright Magenta*/
-    --color_15: '#16A085'; /*Bright Cyan*/
-    --color_16: '#FFFFFF'; /*Bright White*/
-    --background: '#1E2229'; /*Background*/
-    --foreground: '#17A88B'; /*Foreground (Text)*/
-    --cursor: '#17A88B'; /*Cursor*/
+    --color_01:     #1E2229; /*Black (Host)*/
+    --black:  var(--color_01);
+    --host:    var(--color_01);
+    --color_02:     #ED1515; /*Red (Syntax string)*/
+    --red:       var(--color_02);
+    --string:   var(--color_02);
+    --color_03:     #44853A; /*Green (Command)*/
+    --green:    var(--color_03);
+    --command: var(--color_03);
+    --color_04:     #F67400; /*Yellow (Command second)*/
+    --yellow:   var(--color_04);
+    --command2: var(--color_04);
+    --color_05:     #1D99F3; /*Blue (Path)*/
+    --blue:     var(--color_05);
+    --path:   var(--color_05);
+    --color_06:     #9B59B6; /*Magenta (Syntax var)*/
+    --magenta:  var(--color_06);
+    --var:   var(--color_06);
+    --color_07:     #1ABC9C; /*Cyan (Prompt)*/
+    --cyan:     var(--color_07);
+    --prompt:   var(--color_07);
+    --color_08:     #FCFCFC; /*White*/
+    --white:    var(--color_08);
+    --color_09:     #7F8C8D; /*Bright Black*/
+    --bright-black: var(--color_09);
+    --color_10:     #C0392B; /*Bright Red (Command error)*/
+    --bright-red:   var(--color_10);
+    --error:   var(--color_10);
+    --color_11:     #55A649; /*Bright Green (Exec)*/
+    --bright-green: var(--color_11);
+    --exec:    var(--color_11);
+    --color_12:     #FDBC4B; /*Bright Yellow*/
+    --bright-yellow: var(--color_12);
+    --color_13:     #3DAEE9; /*Bright Blue (Folder)*/
+    --bright-blue:  var(--color_13);
+    --folder:  var(--color_13);
+    --color_14:     #8E44AD; /*Bright Magenta*/
+    --bright-magenta: var(--color_14);
+    --color_15:     #16A085; /*Bright Cyan*/
+    --bright-cyan:  var(--color_15);
+    --color_16:     #FFFFFF; /*Bright White*/
+    --bright-white: var(--color_16);
+    --background:   #1E2229; /*Background*/
+    --foreground:   #17A88B; /*Foreground (Text)*/
+    --cursor:       #17A88B; /*Cursor*/
 }
 
 body {
@@ -974,3 +1000,6 @@ hr {
 .gh-copyright {
     font-size: 1.4rem;
 }
+
+
+@import "overrides.css";
