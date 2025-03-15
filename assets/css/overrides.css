@@ -19,3 +19,15 @@
     text-shadow: 0 0 5px rgba(--bright-black, 1);
     overflow: hidden;
 }
+
+.gh-head-inner a {
+    color: var(--bright-green);
+}
+.gh-head-inner a:before {
+    content: "[";
+    color: var(--bright-black);
+}
+.gh-head-inner a:after {
+    content: "]";
+    color: var(--bright-green);
+}
