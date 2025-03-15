@@ -133,7 +133,8 @@ hr {
 }
 
 .gh-head-logo {
-    font-weight: 800;
+    font-size: 7px;
+    white-space: pre-wrap;
 }
 
 .gh-head-logo img {
