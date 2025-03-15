@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
-
-    {{#is "home"}}
-        {{#if @site.cover_image}}
-            <link rel="preload" as="image" href="{{@site.cover_image}}">
-        {{/if}}
-    {{/is}}
+    <link rel="stylesheet" href="{{asset "css/overrides.css"}}">
 
     <script>
         /* The script for calculating the color contrast was taken from
