@@ -4,7 +4,8 @@
     {{#tag}}
         <section class="gh-article gh-inner">
             <header class="gh-article-header">
-                <h1 class="gh-article-title">{{name}}</h1>
+                <h1 class="gh-article-title"></h1>
+                <ascii-banner text="{{name}}" font-url="{{asset "figs/Ivrit.flf"}}"></ascii-banner>
                 {{#if description}}
                     <p class="gh-article-excerpt">{{description}}</p>
                 {{/if}}
@@ -12,7 +13,7 @@
             </header>
         </section>
     {{/tag}}
-    <div class="gh-feed{{#match @custom.header_section_layout "!=" "Large background"}} gh-inner{{/match}}">
+    <div class="gh-feed">
         {{#foreach posts}}
             {{> "loop"}}
         {{/foreach}}
