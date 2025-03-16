@@ -38,3 +38,9 @@
 .gh-head-menu a:after {
     content: "]";
 }
+
+.has-background-about .gh-about-inner {
+    margin-top: 100px;
+    align-items: flex-start;
+    min-height: none;
+}
