@@ -31,3 +31,9 @@
     content: "]";
     color: var(--bright-green);
 }
+.gh-head-menu a:hover:before {
+    content: "[  ";
+}
+.gh-head-menu a:hover:after {
+    content: "  ]";
+}
