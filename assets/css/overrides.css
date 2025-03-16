@@ -2,6 +2,11 @@
     background: var(--background);
 }
 
+.has-background-about .gh-about-content {
+    margin-top: 0px;
+    max-width: 400px;
+}
+
 .gh-site .has-background-about .gh-about:before {
     background: radial-gradient(circle, rgb(31, 25, 2) 18%, var(--background) 100%);
     position: fixed;
@@ -49,3 +54,4 @@ pre {
     background: transparent;
     overflow: hidden;
 }
+
