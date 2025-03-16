@@ -7,11 +7,10 @@
         <article class="gh-article {{post_class}}">
             {{#match @page.show_title_and_feature_image}}
                 <header class="gh-article-header gh-canvas">
-                    <h1 class="gh-article-title">{{title}}</h1>
+                    <ascii-banner text="{{title}}" font-url="{{asset "figs/Ivrit.flf"}}"></ascii-banner>
                     {{#if custom_excerpt}}
                         <p class="gh-article-excerpt">{{custom_excerpt}}</p>
                     {{/if}}
-                    {{> "feature-image"}}
                 </header>
             {{/match}}
 
