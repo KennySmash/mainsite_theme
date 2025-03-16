@@ -22,10 +22,14 @@
 
 .gh-head-menu a {
     color: var(--bright-black);
+    transition: all 0.3s ease-in;
+}
+.gh-head-menu a:hover {
+    color: var(--background);
+    background-color: var(--bright-green);
 }
 .gh-head-menu a:before, .gh-head-menu a:after {
     color: var(--bright-green);
-    transition: all 0.2s ease-in-out;
     padding: 0;
 }
 .gh-head-menu a:before {
@@ -33,10 +37,4 @@
 }
 .gh-head-menu a:after {
     content: "]";
-}
-.gh-head-menu a:hover:before {
-    padding-right: 3px; 
-}
-.gh-head-menu a:hover:after {
-    padding-left: 3px; 
 }
