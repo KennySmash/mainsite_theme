@@ -7,11 +7,6 @@
     position: fixed;
 }
 
-.gh-head-logo {
-    letter-spacing: -0.2em;
-    line-height: 0.8em;
-}
-
 .ascii-art {
     white-space: pre;
     font-size: 0.8em;
@@ -28,6 +23,9 @@
     color: var(--background);
     background-color: var(--bright-green);
 }
+.gh-head-menu a:after:hover, .gh-head-menu a:before:hover {
+    background-color: var(--background);
+}
 .gh-head-menu a:before, .gh-head-menu a:after {
     color: var(--bright-green);
     padding: 0;
@@ -42,10 +40,11 @@
 .has-background-about .gh-about-inner {
     margin-top: 100px;
     align-items: flex-start;
-    min-height: none;
+    min-height: auto;
 }
 
 pre {
     padding: none;
     background: transparent;
+    overflow: hidden;
 }
