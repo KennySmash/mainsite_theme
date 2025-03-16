@@ -59,10 +59,12 @@ pre {
 
 .gh-main.gh-outer {
     padding-top: 2px;
-    
+
 }
 
-
+.has-classic-feed .gh-card-title {
+    font-size: 14px;
+}
 
 
 
