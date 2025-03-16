@@ -5,7 +5,7 @@ class FlfAsciiRenderer extends HTMLElement {
     this.fontData = null
     this.text = this.getAttribute('text') || 'Hello'
     this.fontUrl = this.getAttribute('font-url') || ''
-    this.render()
+    this.renderAscii()
   }
 
   async connectedCallback() {
