@@ -4,7 +4,8 @@
 
 .has-background-about .gh-about-content {
     margin-top: 0px;
-    max-width: 400px;
+    max-width: 70%;
+    margin-bottom: 20px;
 }
 
 .gh-site .has-background-about .gh-about:before {
@@ -54,4 +55,19 @@ pre {
     background: transparent;
     overflow: hidden;
 }
+
+
+.gh-main.gh-outer {
+    padding-top: 2px;
+    
+}
+
+
+
+
+
+
+
+
+
 
