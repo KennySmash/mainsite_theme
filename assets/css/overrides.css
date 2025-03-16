@@ -74,6 +74,12 @@ pre {
     color: var(--bright-black);
 }
 
+.gh-article-excerpt {
+    margin-top: 0;
+    font-size: 18px;
+}
 
-
+:is(.tag-template,.author-template) .gh-article {
+    margin-bottom: 10px;
+}
 
