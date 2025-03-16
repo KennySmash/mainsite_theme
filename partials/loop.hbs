@@ -1,7 +1,7 @@
 <article class="gh-card {{post_class}}">
     <a class="gh-card-link" href="{{url}}">
         <div class="gh-card-wrapper">
-            <pre class="gh-card-title">{{date format="DD MMM YYYY"}} - {{title}}</pre>
+            <pre class="gh-card-title">{{date format="DD MMM YYYY"}} - {{title}} {{#if custom_excerpt}}- <span class="gh-card-excerpt">{{custom_excerpt}}</span>{{/if}}</pre>
         </div>
     </a>
 </article>

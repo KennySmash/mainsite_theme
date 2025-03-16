@@ -70,7 +70,9 @@ pre {
     margin-top: 0;
 }
 
-
+.gh-card-excerpt {
+    color: var(--bright-black);
+}
 
 
 
