@@ -33,7 +33,6 @@
             <div class="gh-head-brand">
                 <div class="gh-head-brand-wrapper">
                     <a class="gh-head-logo" href="{{@site.url}}"><pre class="ascii-art">
-
   ██████  ██▓███   ██▓▓█████▄ ▓█████  ██▀███     ▄▄▄█████▓▓█████  ▄████▄   ██░ ██ 
 ▒██    ▒ ▓██░  ██▒▓██▒▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒   ▓  ██▒ ▓▒▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒
 ░ ▓██▄   ▓██░ ██▓▒▒██▒░██   █▌▒███   ▓██ ░▄█ ▒   ▒ ▓██░ ▒░▒███   ▒▓█    ▄ ▒██▀▀██░
@@ -43,7 +42,7 @@
 ░ ░▒  ░ ░░▒ ░      ▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░       ░     ░ ░  ░  ░  ▒    ▒ ░▒░ ░
 ░  ░  ░  ░░        ▒ ░ ░ ░  ░    ░     ░░   ░      ░         ░   ░         ░  ░░ ░
       ░            ░     ░       ░  ░   ░                    ░  ░░ ░       ░  ░  ░
-                       ░                                         ░                
+                       ░                                         ░                 
 </pre>
                     </a>
                 </div>
@@ -86,7 +85,7 @@
 
     {{{body}}}
 
-    <footer class="gh-foot gh-outer">
+    {{!-- <footer class="gh-foot gh-outer">
         <div class="gh-foot-inner gh-inner">
             <nav class="gh-foot-menu">
                 {{navigation type="secondary"}}
@@ -94,13 +93,13 @@
 
             <div class="gh-copyright">
                 {{#unless @custom.footer_text}}
-                    {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                    {{@site.title}} © {{date format="YYYY"}}. Powered by a<a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
                 {{else}}
                     {{@custom.footer_text}}
                 {{/unless}}
             </div>
         </div>
-    </footer>
+    </footer> --}}
 
 </div>
 
