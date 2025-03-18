@@ -101,7 +101,7 @@ pre {
 }
 
 
-.gh-article-header {
+.gh-content .gh-article-header {
     grid-column: 1 / span 8;
 }
 .gh-article-meta {
