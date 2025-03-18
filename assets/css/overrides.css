@@ -95,10 +95,11 @@ pre {
     margin-bottom: 50px;
 }
 
-.gh-article-meta {
-    grid-column: 12 / span 1;
-}
 
 .gh-canvas>* {
     grid-column: 1 / span 8;
+}
+
+.gh-article-meta {
+    grid-column: 12 / span 1;
 }
