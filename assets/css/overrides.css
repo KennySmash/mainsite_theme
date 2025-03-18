@@ -1,5 +1,6 @@
 body {
     font-family: var(--font);
+    font-size: 18px;
 }
 .gh-site {
     background: var(--background);
@@ -86,3 +87,10 @@ pre {
     margin-bottom: 10px;
 }
 
+.page-template .gh-article-header {
+    margin-top: 10px;
+}
+
+:is(.post-template,.page-template) .no-image .gh-content {
+    margin-bottom: 50px;
+}
