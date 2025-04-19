@@ -15,10 +15,15 @@ jobs:
       - name: 🕵️ List files for debugging
         run: ls -R
 
+      - name: 🔍 Check API URL and env
+        run: |
+          echo "Using Ghost Admin API URL: ${{ secrets.GHOST_ADMIN_API_URL }}"
+          echo "Key prefix: ${GHOST_ADMIN_API_KEY:0:5}..."  # Will show key prefix safely
+        env:
+          GHOST_ADMIN_API_KEY: ${{ secrets.GHOST_ADMIN_API_KEY }}
+
       - name: 🚀 Deploy Ghost theme
         uses: TryGhost/action-deploy-theme@v1.6.3
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
-          # If your theme is in a subfolder, set this (e.g., 'themes/my-theme')
-          # theme-path: .
