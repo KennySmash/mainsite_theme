@@ -1,14 +1,24 @@
 name: Theme Deploy
+
 on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: TryGhost/action-deploy-theme@v1.6.3
+      - name: 📦 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🕵️ List files for debugging
+        run: ls -R
+
+      - name: 🚀 Deploy Ghost theme
+        uses: TryGhost/action-deploy-theme@v1.6.3
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          # If your theme is in a subfolder, set this (e.g., 'themes/my-theme')
+          # theme-path: .
